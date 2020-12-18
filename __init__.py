@@ -5,7 +5,7 @@ import pandas as pd
 url = 'https://www.nationallottery.co.za/index.php?task=results.redirectPageURL&amp;Itemid=265&amp;option=com_weaver&amp;controller=lotto-history'
 
 def lotto_scraper(start_draw, end_draw, save_filename):
-    """Takes in first lotto draw number you want to scrape as well as the last lotto draw number. The filename is the name of the output CSV that will be saved to the machine."""
+    """Define first lotto draw number you want to scrape as well as the last lotto draw number. The filename is the name of the output CSV that will be saved to the machine."""
     
     new = []
     for i in range(start_draw, end_draw):
